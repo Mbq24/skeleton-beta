@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<form class="container p-5">
+  <div class="form-group">
+    <label for="first-name">First name:</label>
+    <input type="text" class="form-control" id="first-name" required>
+  </div>
+  <div class="form-group">
+    <label for="phone-number">Phone number:</label>
+    <input type="tel" class="form-control" id="phone-number" required>
+  </div>
+  <div class="form-group">
+    <label for="age">Age:</label>
+    <input type="number" class="form-control" id="age" min="18" max="100" required>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="opt-in" required>
+    <label class="form-check-label" for="opt-in">I agree to receive email updates and promotions from your company</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
