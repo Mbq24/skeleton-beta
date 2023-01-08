@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="static/style/global.css" />
+    <link rel="stylesheet" href="static/style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Exo 2:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="account-verification">
+      <div class="account-verification-child"></div>
+      <div class="account-verification-inner">
+        <div class="please-verify-your-phone-numbe-parent">
+          <div class="please-verify-your-phone-numbe">
+            Please verify your phone number. A verification code has been sent
+            to your mobile device.
+          </div>
+          <div class="verification-code">
+            <input
+              class="email"
+              type="text"
+              placeholder="Verification Code"
+              required
+            />
+          </div>
+          <div class="frame-parent">
+            <div
+              class="buttonsecondarytrailingdefa-wrapper"
+              id="frameContainer"
+            >
+              <button class="buttonsecondarytrailingdefa">
+                <div class="exchange" onclick="location.href='{{ url_for('landing') }}'">Verify</div>
+                <img
+                  class="fiarrow-right-icon"
+                  alt=""
+                  src="static/img/fiarrowright.svg"
+                />
+              </button>
+            </div>
+            <div class="resend-code">Resend Code</div>
+          </div>
+        </div>
+      </div>
+      <h1 class="verify-your-account">Verify your account</h1>
+      <div class="landing-top-nav">
+        <div class="top-nav">
+          <img class="mask-group-icon" alt="" src="static/img/mask-group@2x.png" />
+          <div class="skeleton">SKELETON</div>
+          <div class="skeleton1">SKELETON</div>
+          <img
+            class="skeleton-purple-1"
+            alt=""
+            src="static/img/skeleton-purple-1@2x.png"
+          />
+          <div class="top-nav-20">
+            <img
+              class="notifications-icon"
+              alt=""
+              src="static/img/notifications-icon.svg"
+              id="notificationsIcon"
+            /><img class="user-icon" alt="" src="static/img/user.svg" /><input
+              class="search-bar"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          class="buttonsecondarystatusdefaul"
+          id="buttonSecondaryStatusDefaulContainer"
+        >
+          <img class="frame-icon" alt="" src="static/img/frame.svg" />
+          <div class="connect-wallet">Connect Wallet</div>
+        </div>
+      </div>
+
+      <img onclick="location.href='{{ url_for('landing') }}'"
+        class="account-verification-item"
+        alt=""
+        src="static/img/group-48095398.svg"
+      />
+    </div>
+
+    <script>
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function (e) {
+          // Please sync "Dashboard Mask" to the project
+        });
+      }
+      
+      var notificationsIcon = document.getElementById("notificationsIcon");
+      if (notificationsIcon) {
+        notificationsIcon.addEventListener("click", function (e) {
+          // Please sync "Notifications" to the project
+        });
+      }
+      
+      var buttonSecondaryStatusDefaulContainer = document.getElementById(
+        "buttonSecondaryStatusDefaulContainer"
+      );
+      if (buttonSecondaryStatusDefaulContainer) {
+        buttonSecondaryStatusDefaulContainer.addEventListener("click", function (e) {
+          // Please sync "Connect Wallet" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

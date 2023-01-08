@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="static/style/global.css" />
+    <link rel="stylesheet" href="static/style/create-account.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Exo 2:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="create-account">
+      <div class="create-account-child"></div>
+      <div class="buttonsecondarytrailingdefa-container" id="frameContainer">
+        <div class="buttonsecondarytrailingdefa1">
+          <div class="exchange1" onclick="location.href='{{ url_for('verify_acct') }}'">Confirm</div>
+
+          <img
+            class="fiarrow-right-icon1"
+            alt=""
+            src="static/img/fiarrowright1.svg"
+          />
+        </div>
+      </div>
+      <div class="frame-container">
+        <div class="frame-parent1">
+          <div class="userinputshort-wrapper">
+            <div class="userinputshort">
+              <div class="username">
+                <div class="first-name">First Name</div>
+                <div class="email1"><div contentEditable="true" class="alex">Alex</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="userinputshort-wrapper">
+            <div class="userinputshort">
+              <div class="username">
+                <div class="first-name">Last Name</div>
+                <div class="email1"><div contentEditable="true" class="alex">Hodge</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="userinputshort">
+          <div class="username">
+            <div class="first-name">Email Address</div>
+            <div class="email3" contentEditable="true" >
+              <div class="alex-hodge">AlexHodge@mail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="userinputshort">
+          <div class="username">
+            <div class="first-name">Password</div>
+            <div class="email3">
+              <div class="alex-hodge">AlexHodge@mail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="userinputshort">
+          <div class="username">
+            <div class="first-name">Confirm Password</div>
+            <div class="email3">
+              <div class="alex-hodge">AlexHodge@mail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="userinputshort">
+          <div class="username">
+            <div class="first-name">Phone Number</div>
+            <div class="email3"><div class="alex-hodge">12354566849</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="create-an-account" >Create an Account</div>
+      <img class="create-account-item" alt="" />
+      <img onclick="location.href='{{ url_for('landing') }}'"
+        class="create-account-inner"
+        alt=""
+        src="static/img/group-480953981.svg"
+      />
+
+
+
+
+      <div class="landing-top-nav2">
+        <div class="top-nav2">
+          <img class="mask-group-icon2" alt="" src="static/img/mask-group@2x.png" />
+          <div class="skeleton4">SKELETON</div>
+          <div class="skeleton5">SKELETON</div>
+          <img
+            class="skeleton-purple-12"
+            alt=""
+            src="static/img/skeleton-purple-1@2x.png"
+          />
+          <div class="top-nav-202">
+            <img
+              class="notifications-icon2"
+              alt=""
+              src="static/img/notifications-icon2.svg"
+            /><img class="user-icon2" alt="" src="static/img/user2.svg" />
+            <div class="search-bar2">
+              <div class="contents1">
+                <img class="vector-icon6" alt="" src="static/img/vector5.svg" />
+                <div class="search1">
+                  <div class="first-name">Search by keyword</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttonsecondarystatusdefaul2">
+          <img class="frame-icon2" alt="" src="static/img/frame.svg" />
+          <div class="connect-wallet2">Connect Wallet</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function (e) {
+          // Please sync "Account Verification" to the project
+        });
+      }
+      </script>
+  </body>
+</html>
